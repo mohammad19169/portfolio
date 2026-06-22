@@ -195,11 +195,11 @@
     .hero-tag{margin-inline:auto}
     .portrait-wrap{order:-1}
     .about-grid{grid-template-columns:1fr;gap:34px}
-    .nav-links{position:fixed;inset:0;flex-direction:column;justify-content:center;align-items:center;
-      background:#05050c;background:linear-gradient(160deg,#0a0a16 0%,#05050c 100%);transform:translateX(100%);
-      transition:transform .45s cubic-bezier(.7,0,.25,1),opacity .35s ease;gap:38px;opacity:0;visibility:hidden;z-index:55}
+    .nav-links{position:fixed;inset:0;width:100vw;height:100vh;flex-direction:column;justify-content:center;align-items:center;
+      background-color:#05050c!important;background-image:linear-gradient(160deg,#0a0a16 0%,#05050c 100%);transform:translateX(100%);
+      transition:transform .45s cubic-bezier(.7,0,.25,1),opacity .35s ease;gap:38px;opacity:0;visibility:hidden;z-index:60}
     .nav-links.open{transform:none;opacity:1;visibility:visible}
-    .nav-links a{font-size:1.6rem;color:var(--ink);font-weight:600}
+    .nav-links a{font-size:1.6rem;color:#fff!important;font-weight:600}
     .nav-links a::after{bottom:-8px;height:2px}
     .nav-cta{font-size:1rem!important;padding:13px 32px!important;margin-top:6px}
     .burger{display:flex}
