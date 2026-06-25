@@ -115,10 +115,6 @@
   .portrait{position:relative;width:310px;height:310px;border-radius:50%;object-fit:cover;
     border:4px solid var(--bg);box-shadow:0 0 0 1px var(--line),0 30px 80px rgba(0,0,0,.6);z-index:2}
   .portrait-glow{position:absolute;width:360px;height:360px;border-radius:50%;background:radial-gradient(circle,rgba(139,92,246,.35),transparent 65%);filter:blur(40px);z-index:1}
-  .scroll-ind{position:absolute;bottom:34px;left:50%;transform:translateX(-50%);font-family:'JetBrains Mono',monospace;
-    font-size:.72rem;letter-spacing:2px;color:var(--faint);display:flex;flex-direction:column;align-items:center;gap:8px;text-transform:uppercase}
-  .scroll-ind .line{width:1px;height:36px;background:linear-gradient(var(--gold),transparent);animation:drop 2s infinite}
-  @keyframes drop{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
 
   /* ---------- Reveal ---------- */
   .reveal{opacity:0;transform:translateY(36px);transition:.9s cubic-bezier(.2,.7,.2,1)}
@@ -254,7 +250,6 @@
       <div class="portrait-ring"></div>
       <img src="assets/profile.jpeg" alt="Muhammad Umer" class="portrait" />
     </div>
-    <div class="scroll-ind"><span>Scroll</span><span class="line"></span></div>
   </header>
 
   <!-- ABOUT -->
